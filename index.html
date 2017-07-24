@@ -1,40 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>一款常见的图文混排的Blog文章列表丨芯晴网页特效丨CsrCode.Cn</title>
+    <title>肖建宇的博客</title>
+    <link rel="stylesheet" type="text/css" href="static/zui/css/zui.min.css" />
+    <script type="text/javascript" src="static/jquery.min.js"></script>
+    <script type="text/javascript" src="static/zui/js/zui.min.js"></script>
+    <script>
+        $(function () {
+            getPage('linux');
+        });
+        function getPage(flag) {
+            $("#result").load("pages/"+flag+"/list.html");
+        }
+
+    </script>
 </head>
-<style>
-    * { margin:0; padding:0; font-size:12px; color:#666; list-style:none; font-family:Arial, Helvetica, sans-serif;}
-    body{ background:#ebead1;}
-    a{ color:#514f42;text-decoration:none;}
-    a:hover{ color:#669900;}
-    #wrap{ width:650px; margin:30px auto; overflow:hidden;}
-    .list{ width:650px; padding:0 0 20px 0; margin:0 0 20px 0; border-bottom:1px dashed #666633;}
-    .list .date{ float:left;width:76px; height:58px; margin:0 20px 0 0; padding:2px 0 0; background:#514F42;text-transform: uppercase;text-align: center;font-size:10px;font-weight: bold; color:#FFF;}
-    .list b{display:block; font-size:40px; color:#FFF; line-height:40px;}
-    .list .meta{margin:0 0 25px 0; color:#979680;}
-    .list h2 a{font-size: 1.8em; }
-    .list p{ display:block; line-height:18px;}
-</style>
+
 <body>
-<div id="wrap">
-    <div class="list">
-        <p class="date">三月 <b>03</b></p>
-        <h2><a href="http://www.csrcode.cn/html/txdm/tcys/1293.htm">一款简单的网页弹出层JS代码</a></h2>
-        <p class="meta">来自：<a href="/">CsrCode.Cn</a> | 编辑：<a href="/">芯晴网页特效</a> | <a href="#">暂无回复 &raquo;</a></p>
-        <p>一款在网页中弹出层的实例代码，基于JS+css，本实例包含两个实例，一个是标准弹出层，另一个是弹出一个可拖动的层，并可设置层的标题，容器内容等，这是一个基本的层弹出单元，所有复杂的层弹出代码都可在此基础上进一步扩展。</p>
+<div style="align-content: center;width: 100%">
+    <div id="wrap" >
+        <ul class="nav nav-secondary nav-justified">
+            <li class="nav-heading">肖建宇的博客</li>
+            <li class="active"><a href="javascript:void(0);" onclick="getPage('linux')">Linux</a></li>
+            <li><a href="your/nice/url">Nginx</a></li>
+            <li><a href="your/nice/url">Redis</a></li>
+            <li><a href="your/nice/url">Spring</a></li>
+            <li><a href="your/nice/url">性能优化 </a></li>
+        </ul>
     </div>
-    <div class="list">
-        <p class="date">三月 <b>22</b></p>
-        <h2><a href="http://www.csrcode.cn/html/txdm/tcys/1292.htm">最精简的JS鼠标拖动层代码，支持鼠标吸附</a></h2>
-        <p class="meta">来自：<a href="http://www.CsrCode.cn/">CsrCode.Cn</a> | 编辑：<a href="/">芯晴网页特效</a> | <a href="#">暂无回复 &raquo;</a></p>
-        <p>相对于其它的鼠标拖动效果，这款拖动特效还是比较精简的，而且它还支持鼠标吸附，不按鼠标左键它也可以会跟随鼠标移动；定义时候也相对方便，只用指定被拖动的DIV ID就可以了，扩展性很好。</p>
+    <div id="result">
+
     </div>
 </div>
 </body>
 </html>
 
-<p align="center">本特效由 <a href="http://www.CsrCode.cn" target="_blank">芯晴网页特效</a>丨CsrCode.Cn 收集于互联网，只为兴趣与学习交流，不作商业用途。</p>
 
 
