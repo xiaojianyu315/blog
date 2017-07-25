@@ -1,95 +1,65 @@
 <p style="text-align:center">
-    <span style="font-size:27px">ActiveMQ </span><span style="font-size:27px;font-family:宋体">简介</span>
+    <span style="font-size:27px">ActiveMQ </span><span style="font-size:27px;font-family:宋体">下载与安装</span>
 </p>
-<p style="line-height: 21px">
-    <span style="font-size: 19px;font-family: &#39;Courier New&#39;">ActiveMQ</span><span style="font-size: 19px;font-family: 宋体">是什么？</span>
+<p style="line-height: 23px">
+    <span style="font-family: 宋体">简述：这章主要讲解安装前提、安装过程、安装会遇到哪些问题</span>
 </p>
-<p style="margin-left: 48px;line-height: 19px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family: 宋体">ActiveMQ</span><span style="font-family: 宋体">是Apache开发的一款</span><span style="font-family:宋体;color:#262626">开源消息中间件；</span>
+<p style="line-height: 23px">
+    <span style="font-family: 宋体">版本：apache-activemq-5.15.0</span>
 </p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">支持JMS1.1协议和J2EE 1.4规范；</span>
+<p style="line-height: 23px">
+    <span style="font-family: 宋体">系统环境：Linux</span>
 </p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">支持语言Java,C,C++,C#,</span><span style="font-family: 宋体; color: rgb(38, 38, 38); text-decoration: none;">Ruby,Perl,Python,PHP；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">并且对Spring支持友好，可以很方便的集成；</span>
-</p>
-<p style="margin-left: 48px;line-height: 19px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">并且支持多种传送协议：in-VM,TCP,SSL,NIO,UDP,Groups,JXTA</span>
-</p>
-<p style="margin-left: 48px;line-height: 19px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">支持集群部署、负载均衡</span>
-</p>
-<p style="margin-left: 48px;line-height: 19px">
-    <span style="font-family: 宋体">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">支持消息持久化、消息重试机制、手动确认机制</span>
-</p>
-<p style="line-height: 19px">
+<p style="line-height: 23px">
     <span style="font-family: Times">&nbsp;</span>
 </p>
-<p style="line-height: 21px">
-    <span style="font-size: 19px;font-family: &#39;Courier New&#39;">ActiveMQ</span><span style="font-size: 19px;font-family: 宋体">安装简单吗？</span>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">1.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">由于ActiveMQ是java编写，所以需要先安装java环境，首先下载jdk1.7，此处就不讲解jdk的安装了，需要你自行安装好</span>
 </p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">安装非常简单，基本上就是开箱即用，首先安装JDK，然后从官网下载下来MQ，就能使用了。</span>
+<p style="margin-left: 24px;line-height: 23px">
+    <span style="font-family: 宋体">&nbsp;</span>
 </p>
-<p style="line-height: 19px">
-    <span style="font-family: Times">&nbsp;</span>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">2.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">官网下载最新的ActiveMQ二进制包，直接去官方地址：<a href="http://activemq.apache.org/download.html"><span style="color:blue">http://activemq.apache.org/download.html</span></a>下载，如果你觉得麻烦，我也提供了<a href="https://xiaojianyu315.github.io/blog/software/apache-activemq-5.15.0-bin.tar.gz">原版下载包</a>，你可以直接下载使用</span>
 </p>
-<p style="line-height: 21px">
-    <span style="font-size: 19px;font-family: &#39;Courier New&#39;">ActiveMQ</span><span style="font-size: 19px;font-family: 宋体">有什么好处？</span>
+<p style="margin-left: 24px;line-height: 23px">
+    <span style="font-family: 宋体">&nbsp;</span>
 </p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">跨编程语言交互；</span>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">3.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">下载后解压进入linux-x86-64目录，</span>
 </p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">增加系统吞吐量；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">并行的任务串行化，为系统减压；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">增加系统扩展性；</span>
-</p>
-<p style="line-height: 21px">
-    <span style="font-size:19px;font-family:&#39;Courier New&#39;;color:#333333">&nbsp; &nbsp;&nbsp;</span>
-</p>
-<p style="line-height: 21px">
-    <span style="font-size: 19px;font-family: &#39;Courier New&#39;">ActiveMQ</span><span style="font-size: 19px;font-family: 宋体">的应用场景有哪些？（包括但不限于以下这几种场景）</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">异步发送邮件、短信、站内信；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">多个系统之间解耦，比如应用间需要数据同步，一个系统发送消息，另外多个系统需要数据的直接获取即可；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">缓存的异步更新；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">日志集中收集；</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">作为RPC使用；</span>
+<p style="line-height: 23px">
+    <span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /apache-activemq-5.15.0/bin/linux-x86-64</span>
 </p>
 <p style="line-height: 19px">
-    <span style="font-family: Times">&nbsp;</span>
+    <span style="font-family: 宋体">&nbsp;</span>
+</p>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">4.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">启动ActiveMQ，</span><span style="font-family:宋体;color:#FB0007">记住启动前一定要记住你的电脑的主机名不能有特殊符号，我的主机名因为有个“-”（中划线），死活起不来服务</span>
+</p>
+<p style="line-height: 23px">
+    <span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./activemq&nbsp;start</span>
+</p>
+<p style="line-height: 19px">
+    <span style="font-family: 宋体">&nbsp;</span>
+</p>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">5.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">启动成功提示 Starting&nbsp;ActiveMQ&nbsp;Broker...，说明已经启动成功</span>
+</p>
+<p style="line-height: 19px">
+    <span style="font-family: 宋体">&nbsp;</span>
+</p>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">6.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">登录ActiveMQ控制台,浏览器输入：<a href="http://127.0.0.1:8161/admin/"><span style=";color:#0000E9">http://127.0.0.1:8161/admin/</span></a> 用户admin 密码：admin</span>
+</p>
+<p style="line-height: 19px">
+    <span style="font-family: 宋体">&nbsp;</span>
+</p>
+<p class="MsoListParagraph" style="margin-left: 32px;line-height: 23px">
+    <span style="font-family: 宋体">7.<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体">最好是把ActiveMQ配置成系统服务，随着服务器启动自动启动ActiveMQ，避免繁琐</span>
 </p>
 <p style="line-height: 21px">
-    <span style="font-size: 19px;font-family: &#39;Courier New&#39;">ActiveMQ</span><span style="font-size: 19px;font-family: 宋体">有几种持久化方式？</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">Jdbc</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">AMQ</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">KahaDB</span>
-</p>
-<p style="margin-left: 48px;line-height: 21px">
-    <span style="font-family:宋体;color:#262626">•<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-family:宋体;color:#262626">LevelDB</span>
+    <span style="font-family:宋体;color:#262626">&nbsp;</span>
 </p>
 <p>
     <br/>
