@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>肖建宇的博客</title>
-    <link rel="stylesheet" type="text/css" href="static/zui/css/zui.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/zui/css/zui.min.css"/>
     <script type="text/javascript" src="static/jquery.min.js"></script>
     <script type="text/javascript" src="static/zui/js/zui.min.js"></script>
     <script>
         $(function () {
-            getPage('linux');
+            getPageList('activemq');
         });
-        function getPage(flag) {
-            $("#result").load("pages/"+flag+"/list.html");
+
+        function getPageList(flag) {
+            $("#result").load("pages/" + flag + "/list.html");
+        }
+
+        function getPageView(flag, num) {
+            $("#result").load("pages/" + flag + "/view-" + num + ".html");
         }
 
     </script>
 </head>
 
 <body>
+
+
 <div style="align-content: center;width: 100%">
-    <div id="wrap" >
+    <div id="wrap">
         <ul class="nav nav-secondary nav-justified">
             <li class="nav-heading">肖建宇的博客</li>
-            <li class="active"><a href="javascript:void(0);" onclick="getPage('linux')">Linux</a></li>
-            <li><a href="your/nice/url">Nginx</a></li>
-            <li><a href="your/nice/url">Redis</a></li>
-            <li><a href="your/nice/url">Spring</a></li>
-            <li><a href="your/nice/url">性能优化 </a></li>
+            <li class="active"><a href="javascript:void(0);" onclick="getPageList('activemq')">ActiveMQ</a></li>
+            <!--<li class="active"><a href="javascript:void(0);" onclick="getPageList('linux')">Linux</a></li>-->
+            <!--<li><a href="javascript:void(0);" onclick="getPageList('nginx')">Nginx</a></li>-->
+            <!--<li><a href="javascript:void(0);" onclick="getPageList('redis')">Redis</a></li>-->
+            <!--<li><a href="javascript:void(0);" onclick="getPageList('spring')">Spring</a></li>-->
+            <!--<li><a href="javascript:void(0);" onclick="getPageList('opt')">性能优化 </a></li>-->
         </ul>
     </div>
     <div id="result">
 
     </div>
 </div>
+
 </body>
+
+
+
 </html>
 
 
