@@ -9,9 +9,11 @@
     <script>
         $(function () {
             getPageList('activemq');
+            $("#activemq").addClass("active")
         });
 
         function getPageList(flag) {
+            $("#"+flag).addClass("active").siblings().removeClass();
             $("#result").load("pages/" + flag + "/list.html");
         }
 
@@ -29,7 +31,8 @@
     <div id="wrap">
         <ul class="nav nav-secondary nav-justified">
             <li class="nav-heading">肖建宇的博客</li>
-            <li class="active"><a href="javascript:void(0);" onclick="getPageList('activemq')">ActiveMQ</a></li>
+            <li id="activemq" ><a href="javascript:void(0);" onclick="getPageList('activemq')">ActiveMQ</a></li>
+            <li id="teamcity" ><a href="javascript:void(0);" onclick="getPageList('teamcity')">TeamCity</a></li>
             <!--<li class="active"><a href="javascript:void(0);" onclick="getPageList('linux')">Linux</a></li>-->
             <!--<li><a href="javascript:void(0);" onclick="getPageList('nginx')">Nginx</a></li>-->
             <!--<li><a href="javascript:void(0);" onclick="getPageList('redis')">Redis</a></li>-->
